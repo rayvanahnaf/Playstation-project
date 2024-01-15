@@ -1,0 +1,709 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PlayStation® Official Site: Consoles, Games, Accessories &amp; More</title>
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="shortcut icon"
+        href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAQMAAADCCAMAAAB6zFdcAAAAflBMVEX///8AAADp6enLy8v39/e1tbXt7e2jo6OgoKC4uLjm5ua/v7+oqKjDw8OsrKz7+/tLS0t3d3fd3d06OjocHBzR0dHIyMiKioqZmZkoKChcXFze3t5UVFQ0NDR+fn6Tk5NmZmZFRUUQEBB7e3tubm4qKioYGBiNjY1oaGg/Pz8eA6TOAAAETklEQVR4nO2c65ayIBhGo9S0sprKzE52nOa7/xv8NKtlgCRrFgPis39Ktl528sqxTgcAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAIDNRIfA0x2DbpaEkN0t0h2GVnIHOYfxQHco2ng6yJjvlxPd4Wih5CBn6s90R/T3UA4yvr/aliV7jIN7s0jb9DjwHWSc4tZoqHSQPw1j3dH9DSIHGStHd4B/wAcHhPR1R6iejw5IYn0n8rMDQmLdQSqmjgNytDsrcBxMZ93g+n7p1NUdp0o4Du6DhgN10WYJrIOvoiChngSLh1Osg1VR4NItRG+cKmEd+EXBoMKNhVQ66DIF1k6ySDhY641UHRIOiK0DSRkHF72hKkPGAbH0/SjlYKg3VlVIOTjrjVUVUg4SvbGqQsoB0RurKugusdiBnd0kOQd2TinJObDzxSDnwNUbrCJYB4+JZDiocBDoDVYRcg5CvcEqQs5BW94LIgcbvcEqQs6BnesMcg70xqoKKQdbvbGqQsrBTW+sqghkHCz1xqoKKQeWzqXJOLB1TlXGgZ09JCkH1q44sg5GRUGL1trqOxjpDVQhlQ7odWdL+wb5w13poBNMy1etnD3ZpLu8+1/tIHPkb4tLVxu3anr9XVa1RUfsIKcb9SILBTju4+et48BKwp9XbdvpINqXa1vLgddzb5ftrrjheDj7w1mD28Ygpfbb5Q6GAgdeeJuemPKM+ToNG3jWxRvNmaoIHURxwhS9kcQ9rTWSxAnWvFpUO5jtOR/nsG/KFqXlpaIGlQ6cegZytg2wsImr4z91fu+AkC/DZ1bCqSj6tMNzMJZ0QBKT06MrymqHYnJQwsHZjQbOZNLtpVTBydiXZfBdLWA+eoZd00ESlyeR6DGloTtYHUErKJ9crOMgoU98hvQ9RiZG7ipR8Zu97yX56GDuM/NHfeYeI0fWO76Aq0/nrw8O2MOunr9gv9fEfQnsSe6cM+eRFTm4MB1BZ3zkfrOJSZFdQSNbej+V08+nxyodbF2mYiF9yOmJkVu1GAcJvXMgr09+convYMG0GWrI+YaJLSHr79NhvietR31yB0yKJ7yD3oMVJwk8uBr5UuiwR/NKpzSj+Fmfmg6csai3afAxpyMd63o/DsNhui/1nGo5qEwChQGjBws3Ueh1HYjH0Gsjc2GZQdWQua4Db3Xl3PRkPjJ5qPTC8dm5o7oOHFeUBK5pgxYfu66gOVc76Amfobh5i/Ab98zvOuf/a8B1IJo/+GnsXtXJJkjXLxOL4yENNveULueA03lsHI7X7XpO+X0m4eDab0QWlKeug8XNzn26OfUcnJuXBSWIPjswvyv0WyalRViOg+m4+VmwDu/LUCUHycrmv0Ghee1JuA+z7w6+2/OncS+eQ+TCATuP1hK8/r+iLRg5T/xnDFbWvwUAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA8+A/EFjEEm7DIsAAAAABJRU5ErkJggg==">
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+</head>
+
+<body>
+
+    <!-- navbar -->
+    <nav class="navbar navbar-expand-lg bg-body-tertiary sticky-top">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="#">
+                <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAQMAAADCCAMAAAB6zFdcAAAAflBMVEX///8AAADp6enLy8v39/e1tbXt7e2jo6OgoKC4uLjm5ua/v7+oqKjDw8OsrKz7+/tLS0t3d3fd3d06OjocHBzR0dHIyMiKioqZmZkoKChcXFze3t5UVFQ0NDR+fn6Tk5NmZmZFRUUQEBB7e3tubm4qKioYGBiNjY1oaGg/Pz8eA6TOAAAETklEQVR4nO2c65ayIBhGo9S0sprKzE52nOa7/xv8NKtlgCRrFgPis39Ktl528sqxTgcAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAIDNRIfA0x2DbpaEkN0t0h2GVnIHOYfxQHco2ng6yJjvlxPd4Wih5CBn6s90R/T3UA4yvr/aliV7jIN7s0jb9DjwHWSc4tZoqHSQPw1j3dH9DSIHGStHd4B/wAcHhPR1R6iejw5IYn0n8rMDQmLdQSqmjgNytDsrcBxMZ93g+n7p1NUdp0o4Du6DhgN10WYJrIOvoiChngSLh1Osg1VR4NItRG+cKmEd+EXBoMKNhVQ66DIF1k6ySDhY641UHRIOiK0DSRkHF72hKkPGAbH0/SjlYKg3VlVIOTjrjVUVUg4SvbGqQsoB0RurKugusdiBnd0kOQd2TinJObDzxSDnwNUbrCJYB4+JZDiocBDoDVYRcg5CvcEqQs5BW94LIgcbvcEqQs6BnesMcg70xqoKKQdbvbGqQsrBTW+sqghkHCz1xqoKKQeWzqXJOLB1TlXGgZ09JCkH1q44sg5GRUGL1trqOxjpDVQhlQ7odWdL+wb5w13poBNMy1etnD3ZpLu8+1/tIHPkb4tLVxu3anr9XVa1RUfsIKcb9SILBTju4+et48BKwp9XbdvpINqXa1vLgddzb5ftrrjheDj7w1mD28Ygpfbb5Q6GAgdeeJuemPKM+ToNG3jWxRvNmaoIHURxwhS9kcQ9rTWSxAnWvFpUO5jtOR/nsG/KFqXlpaIGlQ6cegZytg2wsImr4z91fu+AkC/DZ1bCqSj6tMNzMJZ0QBKT06MrymqHYnJQwsHZjQbOZNLtpVTBydiXZfBdLWA+eoZd00ESlyeR6DGloTtYHUErKJ9crOMgoU98hvQ9RiZG7ipR8Zu97yX56GDuM/NHfeYeI0fWO76Aq0/nrw8O2MOunr9gv9fEfQnsSe6cM+eRFTm4MB1BZ3zkfrOJSZFdQSNbej+V08+nxyodbF2mYiF9yOmJkVu1GAcJvXMgr09+convYMG0GWrI+YaJLSHr79NhvietR31yB0yKJ7yD3oMVJwk8uBr5UuiwR/NKpzSj+Fmfmg6csai3afAxpyMd63o/DsNhui/1nGo5qEwChQGjBws3Ueh1HYjH0Gsjc2GZQdWQua4Db3Xl3PRkPjJ5qPTC8dm5o7oOHFeUBK5pgxYfu66gOVc76Amfobh5i/Ab98zvOuf/a8B1IJo/+GnsXtXJJkjXLxOL4yENNveULueA03lsHI7X7XpO+X0m4eDab0QWlKeug8XNzn26OfUcnJuXBSWIPjswvyv0WyalRViOg+m4+VmwDu/LUCUHycrmv0Ghee1JuA+z7w6+2/OncS+eQ+TCATuP1hK8/r+iLRg5T/xnDFbWvwUAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA8+A/EFjEEm7DIsAAAAABJRU5ErkJggg=="
+                    alt="" width="50">
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
+                aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+                    <li class="nav-item">
+                        <a class="nav-link active" aria-current="page" href="#">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Link</a>
+                    </li>
+
+                    <!-- style button -->
+                    <style>
+                        .subscribe-form {
+                            --main-focus: #2d8cf0;
+                            --font-color: #FEFEFE;
+                            --font-color-sub: #666;
+                            --bg-color: #111;
+                            --main-color: #FEFEFE;
+                            font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+                            display: flex;
+                            flex-direction: row;
+                            width: 250px;
+                            height: 35px;
+                            border-radius: 5px;
+                            box-shadow: 4px 4px var(--main-color);
+                        }
+
+                        .subscribe-input {
+                            width: 100%;
+                            height: 100%;
+                            padding: 5px 10px;
+                            border: 2px solid var(--main-color);
+                            border-right: 0;
+                            border-radius: 5px 0 0 5px;
+                            font-size: 15px;
+                            font-weight: 500;
+                            color: var(--font-color);
+                            background: var(--bg-color);
+                        }
+
+                        .subscribe-btn {
+                            width: auto;
+                            height: 100%;
+                            border: 2px solid var(--main-focus);
+                            border-radius: 0 5px 5px 0;
+                            background-color: var(--main-focus);
+                            font-size: 15px;
+                            letter-spacing: 1px;
+                            font-weight: 500;
+                            color: var(--font-color);
+                            cursor: pointer;
+                        }
+
+                        .subscribe-input:focus {
+                            outline: none;
+                            border: 2px solid var(--main-focus);
+                            border-right: 0;
+                        }
+                    </style>
+                    <!-- end style button -->
+
+                    <form class="subscribe-form">
+                        <input class="subscribe-input" placeholder="Find Something..." type="email">
+                        <button class="subscribe-btn">Submit</button>
+                    </form>
+            </div>
+        </div>
+    </nav>
+    <!-- end navbar -->
+
+    <!-- banner -->
+    <style>
+        .banner {
+            height: 100vh;
+            background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(https://gmedia.playstation.com/is/image/SIEPDC/great-games-2024-homepage-hero-desktop-01-14dec23$en?$2400px$);
+            background-repeat: no-repeat;
+            background-size: cover;
+            background-position: center;
+            background-attachment: fixed;
+        }
+
+        .banner-content {
+            justify-content: center;
+            align-items: center;
+            height: 100%;
+            display: flex;
+            flex-direction: column;
+            text-align: center;
+        }
+    </style>
+
+    <!-- style button -->
+    <style>
+        button {
+            position: relative;
+            padding: 10px 20px;
+            border-radius: 7px;
+            border: 1px solid rgb(61, 106, 255);
+            font-size: 14px;
+            text-transform: uppercase;
+            font-weight: 600;
+            letter-spacing: 2px;
+            background: transparent;
+            color: #fff;
+            overflow: hidden;
+            box-shadow: 0 0 0 0 transparent;
+            -webkit-transition: all 0.2s ease-in;
+            -moz-transition: all 0.2s ease-in;
+            transition: all 0.2s ease-in;
+        }
+
+        button:hover {
+            background: rgb(61, 106, 255);
+            box-shadow: 0 0 30px 5px rgba(0, 142, 236, 0.815);
+            -webkit-transition: all 0.2s ease-out;
+            -moz-transition: all 0.2s ease-out;
+            transition: all 0.2s ease-out;
+        }
+
+        button:hover::before {
+            -webkit-animation: sh02 0.5s 0s linear;
+            -moz-animation: sh02 0.5s 0s linear;
+            animation: sh02 0.5s 0s linear;
+        }
+
+        button::before {
+            content: '';
+            display: block;
+            width: 0px;
+            height: 86%;
+            position: absolute;
+            top: 7%;
+            left: 0%;
+            opacity: 0;
+            background: #fff;
+            box-shadow: 0 0 50px 30px #fff;
+            -webkit-transform: skewX(-20deg);
+            -moz-transform: skewX(-20deg);
+            -ms-transform: skewX(-20deg);
+            -o-transform: skewX(-20deg);
+            transform: skewX(-20deg);
+        }
+
+        @keyframes sh02 {
+            from {
+                opacity: 0;
+                left: 0%;
+            }
+
+            50% {
+                opacity: 1;
+            }
+
+            to {
+                opacity: 0;
+                left: 100%;
+            }
+        }
+
+        button:active {
+            box-shadow: 0 0 0 0 transparent;
+            -webkit-transition: box-shadow 0.2s ease-in;
+            -moz-transition: box-shadow 0.2s ease-in;
+            transition: box-shadow 0.2s ease-in;
+        }
+    </style>
+    <!-- end style button -->
+
+    <div class="container-fluid gx-0">
+        <div class="banner">
+            <div class="banner-content text-light">
+                <h1>PlayStation</h1>
+                <p>The biggest games coming to PS5 in 2024
+                    Discover the best upcoming games for PlayStation 5 that you can look forward to playing in the year
+                    ahead.
+                </p>
+                <button>
+                    READY FOR NEW EXPERIENCE!!
+                </button>
+            </div>
+        </div>
+    </div>
+    <!-- end banner -->
+    <br>
+    <!-- Portfolio section -->
+    <style>
+        .portofolio {
+            background: var(--second-bg-color);
+
+        }
+
+        .portofolio h2 {
+            margin-bottom: 4rem;
+
+        }
+
+        .portofolio-container {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, auto));
+            justify-content: center;
+            gap: 2.5rem;
+        }
+
+        .portofolio-container .portofolio-box {
+            position: relative;
+            border-radius: 2rem;
+            box-shadow: 0 0 1rem var(--bg-color);
+            overflow: hidden;
+            display: flex;
+            flex-wrap: wrap;
+
+        }
+
+        .portofolio-box img {
+            width: 100%;
+            transition: .5s ease;
+        }
+
+        .portofolio-box:hover img {
+            transform: scale(1.1);
+        }
+
+        .portofolio-box .portofolio-layer {
+            position: absolute;
+            bottom: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background: linear-gradient(rgba(0, 0, 0, .1), var(--main-color));
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-direction: column;
+            text-align: center;
+            padding: 0 0rem;
+            transform: translateY(100%);
+            transition: .5s ease;
+        }
+
+        .portofolio-box:hover .portofolio-layer {
+            transform: translateY(0);
+        }
+
+        .portofolio-layer h4 {
+            font-size: 3rem;
+
+        }
+
+        .portofolio-layer p {
+            font-size: 1.6rem;
+            margin: .3rem 0 1rem;
+        }
+
+        .portofolio-layer a {
+            display: inline-flex;
+            justify-content: center;
+            align-items: center;
+            width: 5rem;
+            height: 5rem;
+            background: var(--text-color);
+            border-radius: 50%;
+        }
+
+        .portofolio-layer a i {
+            font-size: 2rem;
+            color: var(--second-bg-color);
+        }
+    </style>
+
+    <section class="portfolio" id="portfolio">
+        <div class=" portfolio text-center">
+            <h2>Our game and Event</h2>
+
+        </div>
+
+        <div class="portofolio-container">
+            <div class="portofolio-box">
+                <img src="https://gmedia.playstation.com/is/image/SIEPDC/great-games-2024-keyart-01-13dec23$en?$1200px$"
+                    alt="">
+                <div class="portofolio-layer">
+
+
+                </div>
+            </div>
+
+            <div class="portofolio-box">
+                <img src="https://gmedia.playstation.com/is/image/SIEPDC/fc-24-team-of-the-year-keyart-01-en-14dec23?$1200px$"
+                    alt="">
+                <div class="portofolio-layer">
+
+
+                </div>
+            </div>
+
+            <div class="portofolio-box">
+                <img src="https://gmedia.playstation.com/is/image/SIEPDC/january-sale-part-2-keyart-01-18dec23$en?$1200px$"
+                    alt="">
+                <div class="portofolio-layer">
+
+
+                </div>
+            </div>
+
+            <div class="portofolio-box">
+                <img src="https://gmedia.playstation.com/is/image/SIEPDC/spider-man-2-keyart-01-en-31may23?$1200px$"
+                    alt="">
+                <div class="portofolio-layer">
+
+
+                </div>
+            </div>
+
+            <div class="portofolio-box">
+                <img src="https://gmedia.playstation.com/is/image/SIEPDC/10-games-to-play-first-keyart-01-en-13oct23?$1200px$"
+                    alt="">
+                <div class="portofolio-layer">
+
+
+                </div>
+            </div>
+
+        </div>
+        </div>
+    </section>
+    <br>
+
+    <!-- container char -->
+    <div class="container">
+        <h5 class="text-center">BLURAY DISC GAMES PS5</h5>
+        <div class="container mt-3">
+            <div class="row">
+                <div class="col-lg-6 col-md-6 col-sm-12 mb-2 d-flex justify-content-center" data-aos="fade-up">
+                    <div class="card">
+                        <div class="card-header text-center">GAME</div>
+                        <div class="card-body">
+                            <div class="row">
+                                <div class="col-md-6"><img
+                                        src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcShV57qhJEgT8lunIOu8leHhHk6S8y_YmDKEg&usqp=CAU"
+                                        alt="" class="img-thumbnail"></div>
+                                <div class="col-md-6">
+                                    <h6 class="text-center">DEMONS SLAYER</h6>
+                                    <p class="text-center"><span class="badge bg-secondary">RPG</span></p>
+                                    <ul class="list-group list-group-flush">
+                                        <li class="list-group-item">An item</li>
+                                        <li class="list-group-item">A second item</li>
+                                        <li class="list-group-item">A third item</li>
+                                        <li class="list-group-item">A fourth item</li>
+                                        <li class="list-group-item">And a fifth one</li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-6 col-md-6 col-sm-12 mb-2 d-flex justify-content-center" data-aos="fade-down-left">
+                    <div class="card">
+                        <div class="card-header text-center">GAME</div>
+                        <div class="card-body">
+                            <div class="row">
+                                <div class="col-md-6"><img
+                                        src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSHM2Qwbc41wbhGWW88j8v1IBufmtKKiqmIkg&usqp=CAU"
+                                        alt="" class="img-thumbnail"></div>
+                                <div class="col-md-6">
+                                    <h6 class="text-center">UNCHARTED</h6>
+                                    <p class="text-center"><span class="badge bg-danger">ACTION</span></p>
+                                    <ul class="list-group list-group-flush">
+                                        <li class="list-group-item">An item</li>
+                                        <li class="list-group-item">A second item</li>
+                                        <li class="list-group-item">A third item</li>
+                                        <li class="list-group-item">A fourth item</li>
+                                        <li class="list-group-item">And a fifth one</li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-6 col-md-6 col-sm-12 mb-2 d-flex justify-content-center" data-aos="flip-left">
+                    <div class="card">
+                        <div class="card-header text-center">GAME</div>
+                        <div class="card-body">
+                            <div class="row">
+                                <div class="col-md-6"><img
+                                        src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS-Zsv0sMFzD6bPp2XcxeTctWtdwCvqYYcIVA&usqp=CAU"
+                                        alt="" class="img-thumbnail">
+                                </div>
+                                <div class="col-md-6">
+                                    <h6 class="text-center">MINECRAFT LEGENDS</h6>
+                                    <p class="text-center"><span class="badge bg-info">OPEN WORLD</span></p>
+                                    <ul class="list-group list-group-flush">
+                                        <li class="list-group-item">An item</li>
+                                        <li class="list-group-item">A second item</li>
+                                        <li class="list-group-item">A third item</li>
+                                        <li class="list-group-item">A fourth item</li>
+                                        <li class="list-group-item">And a fifth one</li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-6 col-md-6 col-sm-12 mb-2 d-flex justify-content-center" data-aos="flip-up">
+                    <div class="card">
+                        <div class="card-header text-center">GAME</div>
+                        <div class="card-body">
+                            <div class="row">
+                                <div class="col-md-6"><img
+                                        src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTshsfwp9eZUbcdWPAGwyVOTAWLSRKFcN-6aQ&usqp=CAU"
+                                        alt="" class="img-thumbnail"></div>
+                                <div class="col-md-6">
+                                    <h6 class="text-center">HORIZON</h6>
+                                    <p class="text-center"><span class="badge bg-danger">RPG</span></p>
+                                    <ul class="list-group list-group-flush">
+                                        <li class="list-group-item">An item</li>
+                                        <li class="list-group-item">A second item</li>
+                                        <li class="list-group-item">A third item</li>
+                                        <li class="list-group-item">A fourth item</li>
+                                        <li class="list-group-item">And a fifth one</li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-6 col-md-6 col-sm-12 mb-2 d-flex justify-content-center" data-aos="flip-down">
+                    <div class="card">
+                        <div class="card-header text-center">GAME</div>
+                        <div class="card-body">
+                            <div class="row">
+                                <div class="col-md-6"><img
+                                        src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT0lma9Hk_MWrO5PYLx33NMwutv6iPBa-KteQ&usqp=CAU"
+                                        alt="" class="img-thumbnail"></div>
+                                <div class="col-md-6">
+                                    <h6 class="text-center">JUMANJI</h6>
+                                    <p class="text-center"><span class="badge bg-danger">ACTION</span></p>
+                                    <ul class="list-group list-group-flush">
+                                        <li class="list-group-item">An item</li>
+                                        <li class="list-group-item">A second item</li>
+                                        <li class="list-group-item">A third item</li>
+                                        <li class="list-group-item">A fourth item</li>
+                                        <li class="list-group-item">And a fifth one</li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-6 col-md-6 col-sm-12 mb-2 d-flex justify-content-center" data-aos="zoom-in">
+                    <div class="card">
+                        <div class="card-header text-center">GAME</div>
+                        <div class="card-body">
+                            <div class="row">
+                                <div class="col-md-6"><img
+                                        src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTLj-TqOt8q7JPaZ2Ou4XlriTZ4tKRcBGMlhQ&usqp=CAU"
+                                        alt="" class="img-thumbnail"></div>
+                                <div class="col-md-6">
+                                    <h6 class="text-center">GOD OF WAR</h6>
+                                    <p class="text-center"><span class="badge bg-danger">ACTION</span></p>
+                                    <ul class="list-group list-group-flush">
+                                        <li class="list-group-item">An item</li>
+                                        <li class="list-group-item">A second item</li>
+                                        <li class="list-group-item">A third item</li>
+                                        <li class="list-group-item">A fourth item</li>
+                                        <li class="list-group-item">And a fifth one</li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- end container char -->
+    <br>
+    <!-- carousel -->
+    <div class="container">
+        <div id="carouselExample" class="carousel slide">
+            <div class="carousel-inner">
+                <div class="carousel-item active">
+                    <img src="https://gmedia.playstation.com/is/image/SIEPDC/final-fantasy-xvi-screenshot-02-en-31may23?$1600px$"
+                        class="d-block w-100" alt="..." width="50">
+                </div>
+                <div class="carousel-item">
+                    <img src="https://gmedia.playstation.com/is/image/SIEPDC/spider-man-2-screenshot-miles-webwing-en-25may23.jpg?$1600px$"
+                        class="d-block w-100" alt="..." width="50">
+                </div>
+                <div class="carousel-item">
+                    <img src="https://gmedia.playstation.com/is/image/SIEPDC/FC24-screenshot-10-en-06jul23?$1600px$"
+                        class="d-block w-100" alt="..." width="50">
+                </div>
+            </div>
+            <button class="carousel-control-prev" type="button" data-bs-target="#carouselExample" data-bs-slide="prev">
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Previous</span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#carouselExample" data-bs-slide="next">
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Next</span>
+            </button>
+        </div>
+    </div>
+    <!-- end carousel -->
+    <br>
+    <!-- container accessories -->
+
+    <style>
+        .cardnew {
+            position: relative;
+            width: 350px;
+            height: 200px;
+            background: linear-gradient(-45deg, #f89b29 0%, #ff0f7b 100%);
+            border-radius: 10px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            overflow: hidden;
+            transition: all 0.6s cubic-bezier(0.23, 1, 0.320, 1);
+        }
+
+
+        .card:hover {
+            transform: rotate(-5deg) scale(1.1);
+            box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+        }
+
+        .card__content {
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%) rotate(-45deg);
+            width: 100%;
+            height: 100%;
+            padding: 20px;
+            box-sizing: border-box;
+            background-color: #fff;
+            opacity: 0;
+            transition: all 0.6s cubic-bezier(0.23, 1, 0.320, 1);
+        }
+
+        .card:hover .card__content {
+            transform: translate(-50%, -50%) rotate(0deg);
+            opacity: 1;
+        }
+
+        .card__title {
+            margin: 0;
+            font-size: 24px;
+            color: #333;
+            font-weight: 700;
+        }
+
+        .card__description {
+            margin: 10px 0 0;
+            font-size: 14px;
+            color: #777;
+            line-height: 1.4;
+        }
+
+        .card:hover svg {
+            scale: 0;
+            transform: rotate(-45deg);
+        }
+    </style>
+
+    <div class="container">
+        <h5 class="text-center">Introducing the PS5 console and accessories</h5>
+        <div class="container mt-3">
+            <div class="row">
+                <div class="col-lg-6 col-md-6 col-sm-12 mb-2 d-flex justify-content-center" data-aos="fade-up">
+                    <div class="cardnew">
+                        <img src="https://gmedia.playstation.com/is/image/SIEPDC/ps5-slim-disc-console-featured-hardware-image-block-02-en-15nov23?$1600px$"
+                            alt="" width="355">
+                        <div class="card__content">
+                            <p class="card__title">PlayStation 5 Console
+                            </p>
+                            <p class="card__description">Experience an all-new generation of incredible PlayStation
+                            </p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-6 col-md-6 col-sm-12 mb-2 d-flex justify-content-center" data-aos="fade-down-left">
+                    <div class="cardnew">
+                        <img src="https://gmedia.playstation.com/is/image/SIEPDC/dualsense-range-stacked-image-block-01-en-11feb22?$1600px$  "
+                            alt="" width="355">
+                        <div class="card__content">
+                            <p class="card__title">DualSense™ Wireless Controller
+                            </p>
+                            <p class="card__description">DualSense™ Wireless Controller</h6>
+                                <p class="text-center">Immerse yourself in the gaming experience with a controller
+                                    the supports responsive haptic feedback and dynamic trigger effects.
+                                </p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-6 col-md-6 col-sm-12 mb-2 d-flex justify-content-center" data-aos="flip-left">
+                    <div class="cardnew">
+                        <img src="https://gmedia.playstation.com/is/image/SIEPDC/PULSE-Elite-headset-thumbnail-01-en-08sep23?$1200px$"
+                            alt="" width="355">
+                        <div class="card__content">
+                            <p class="card__title">PULSE Elite™ Wireless Headset
+                            </p>
+                            <p class="card__description">Enjoy lifelike gaming audio in a comfortable headset design
+                                equipped with a retractable microphone and built-in long-life battery
+                            </p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-6 col-md-6 col-sm-12 mb-2 d-flex justify-content-center" data-aos="flip-up">
+                    <div class="cardnew">
+                        <img src="https://gmedia.playstation.com/is/image/SIEPDC/PULSE-Explore-earbuds-image-block-01-en-08sep23?$1200px$"
+                            alt="" width="355">
+                        <div class="card__content">
+                            <p class="card__title">PULSE Explore™ Wireless Earbuds
+                            </p>
+                            <p class="card__description">Enjoy lifelike gaming audio wherever play takes you with a
+                                portable design equipped with hidden microphones and a companion charging case.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-6 col-md-6 col-sm-12 mb-2 d-flex justify-content-center" data-aos="flip-down">
+                    <div class="cardnew">
+                        <img src="https://gmedia.playstation.com/is/image/SIEPDC/access-controller-featured-hardware-image-block-01-en-12oct23?$1200px$"
+                            alt="" width="355">
+                        <div class="card__content">
+                            <p class="card__title">Access™ Controller
+                            </p>
+                            <p class="card__description">A highly customisable PlayStation®5 controller kit designed
+                                to make gaming more accessible.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-6 col-md-6 col-sm-12 mb-2 d-flex justify-content-center" data-aos="zoom-in">
+                    <div class="cardnew">
+                        <img src="https://gmedia.playstation.com/is/image/SIEPDC/ps5-console-cover-range-image-block-01-en-16feb22?$1200px$"
+                            alt="" width="355">
+                        <div class="card__content">
+                            <p class="card__title">PS5 Console Covers
+                            </p>
+                            <p class="card__description">Personalise your PlayStation 5 or PlayStation 5 Digital
+                                Edition console with a vibrant array of new colour options.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- end container char -->
+
+    <!-- footer -->
+    <div class="container">
+        <footer class="d-flex flex-wrap justify-content-between align-items-center py-3 my-4 border-top">
+            <p class="col-md-4 mb-0 text-body-secondary">&copy; 2023 Sony Interactive Entertainment LLC</p>
+
+            <a href="/"
+                class="col-md-4 d-flex align-items-center justify-content-center mb-3 mb-md-0 me-md-auto link-body-emphasis text-decoration-none">
+                <svg class="bi me-2" width="40" height="32">
+                    <use xlink:href="#bootstrap" /></svg>
+            </a>
+
+            <ul class="nav col-md-4 justify-content-end">
+                <li class="nav-item"><a href="#" class="nav-link px-2 text-body-secondary">Home</a></li>
+                <li class="nav-item"><a href="#" class="nav-link px-2 text-body-secondary">Features</a></li>
+                <li class="nav-item"><a href="#" class="nav-link px-2 text-body-secondary">Pricing</a></li>
+                <li class="nav-item"><a href="#" class="nav-link px-2 text-body-secondary">FAQs</a></li>
+                <li class="nav-item"><a href="#" class="nav-link px-2 text-body-secondary">About</a></li>
+            </ul>
+        </footer>
+    </div>
+    <!-- end footer -->
+
+
+    <script src="js/bootstrap.bundle.js"></script>
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script>
+        AOS.init();
+    </script>
+</body>
+
+</html>
