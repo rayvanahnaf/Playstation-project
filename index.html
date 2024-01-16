@@ -351,156 +351,170 @@
     <br>
 
     <!-- container char -->
+
+    <style>
+        .cardme {
+            position: relative;
+            width: 190px;
+            height: 254px;
+            background: #fff;
+            border: solid 4px #333;
+            box-shadow: -5px 5px #333;
+            transition: all .2s ease-in-out;
+            display: flex;
+            justify-content: center;
+            cursor: pointer;
+        }
+
+        .cardme:hover {
+            margin: 10px 10px 0 0;
+            box-shadow: 0px 0px #333;
+        }
+
+        .cardme .img-cardme {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: calc(100% - 50px);
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            transition: filter .2s 1s ease-in-out;
+        }
+
+        .cardme:hover .img-cardme {
+            filter: blur(1px);
+        }
+
+        .cardme .add-cart {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: calc(100% - 50px);
+            background-color: rgba(0, 0, 0, 0.1);
+            text-align: center;
+            line-height: 250px;
+            font-weight: bold;
+            font-size: 19px;
+            opacity: 0;
+        }
+
+        .cardme:hover .add-cart {
+            opacity: 1;
+            transition: opacity .3s 1s ease-in-out;
+        }
+
+        .cardme .info-cardme {
+            position: absolute;
+            height: 50px;
+            width: 100%;
+            bottom: 0;
+            left: 0;
+            right: 0;
+            border-top: solid 1px #333;
+        }
+
+        .cardme .info-cardme p {
+            font-size: 14px;
+            margin: 5px;
+        }
+    </style>
+
     <div class="container">
         <h5 class="text-center">BLURAY DISC GAMES PS5</h5>
         <div class="container mt-3">
             <div class="row">
                 <div class="col-lg-6 col-md-6 col-sm-12 mb-2 d-flex justify-content-center" data-aos="fade-up">
-                    <div class="card">
-                        <div class="card-header text-center">GAME</div>
-                        <div class="card-body">
-                            <div class="row">
-                                <div class="col-md-6"><img
-                                        src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcShV57qhJEgT8lunIOu8leHhHk6S8y_YmDKEg&usqp=CAU"
-                                        alt="" class="img-thumbnail"></div>
-                                <div class="col-md-6">
-                                    <h6 class="text-center">DEMONS SLAYER</h6>
-                                    <p class="text-center"><span class="badge bg-secondary">RPG</span></p>
-                                    <ul class="list-group list-group-flush">
-                                        <li class="list-group-item">An item</li>
-                                        <li class="list-group-item">A second item</li>
-                                        <li class="list-group-item">A third item</li>
-                                        <li class="list-group-item">A fourth item</li>
-                                        <li class="list-group-item">And a fifth one</li>
-                                    </ul>
-                                </div>
-                            </div>
+                    <div class="cardme">
+                        <div class="img-cardme">
+                            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcShV57qhJEgT8lunIOu8leHhHk6S8y_YmDKEg&usqp=CAU"
+                                alt="" width="190px" height="180px">
+                        </div>
+                        <div class="add-cart">Add to Cart</div>
+                        <div class="info-cardme">
+                            <p><strong>Demons Slayer</strong></p>
+                            <p>Price : 69.99$</p>
                         </div>
                     </div>
                 </div>
                 <div class="col-lg-6 col-md-6 col-sm-12 mb-2 d-flex justify-content-center" data-aos="fade-down-left">
-                    <div class="card">
-                        <div class="card-header text-center">GAME</div>
-                        <div class="card-body">
-                            <div class="row">
-                                <div class="col-md-6"><img
-                                        src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSHM2Qwbc41wbhGWW88j8v1IBufmtKKiqmIkg&usqp=CAU"
-                                        alt="" class="img-thumbnail"></div>
-                                <div class="col-md-6">
-                                    <h6 class="text-center">UNCHARTED</h6>
-                                    <p class="text-center"><span class="badge bg-danger">ACTION</span></p>
-                                    <ul class="list-group list-group-flush">
-                                        <li class="list-group-item">An item</li>
-                                        <li class="list-group-item">A second item</li>
-                                        <li class="list-group-item">A third item</li>
-                                        <li class="list-group-item">A fourth item</li>
-                                        <li class="list-group-item">And a fifth one</li>
-                                    </ul>
-                                </div>
-                            </div>
+                    <div class="cardme">
+                        <div class="img-cardme">
+                            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSHM2Qwbc41wbhGWW88j8v1IBufmtKKiqmIkg&usqp=CAU"
+                                alt="" width="190px" height="180px">
+                        </div>
+                        <div class="add-cart">Add to Cart</div>
+                        <div class="info-cardme">
+                            <p><strong>Uncharted</strong></p>
+                            <p>Price : 34.38$</p>
                         </div>
                     </div>
                 </div>
+
                 <div class="col-lg-6 col-md-6 col-sm-12 mb-2 d-flex justify-content-center" data-aos="flip-left">
-                    <div class="card">
-                        <div class="card-header text-center">GAME</div>
-                        <div class="card-body">
-                            <div class="row">
-                                <div class="col-md-6"><img
-                                        src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS-Zsv0sMFzD6bPp2XcxeTctWtdwCvqYYcIVA&usqp=CAU"
-                                        alt="" class="img-thumbnail">
-                                </div>
-                                <div class="col-md-6">
-                                    <h6 class="text-center">MINECRAFT LEGENDS</h6>
-                                    <p class="text-center"><span class="badge bg-info">OPEN WORLD</span></p>
-                                    <ul class="list-group list-group-flush">
-                                        <li class="list-group-item">An item</li>
-                                        <li class="list-group-item">A second item</li>
-                                        <li class="list-group-item">A third item</li>
-                                        <li class="list-group-item">A fourth item</li>
-                                        <li class="list-group-item">And a fifth one</li>
-                                    </ul>
-                                </div>
-                            </div>
+                    <div class="cardme">
+                        <div class="img-cardme">
+                            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS-Zsv0sMFzD6bPp2XcxeTctWtdwCvqYYcIVA&usqp=CAU"
+                                alt="" height="190px" width="180px">
+                        </div>
+                        <div class="add-cart">Add to Cart</div>
+                        <div class="info-cardme">
+                            <p><strong>Minecraft Legends</strong></p>
+                            <p>Price : 29.99$</p>
                         </div>
                     </div>
                 </div>
                 <div class="col-lg-6 col-md-6 col-sm-12 mb-2 d-flex justify-content-center" data-aos="flip-up">
-                    <div class="card">
-                        <div class="card-header text-center">GAME</div>
-                        <div class="card-body">
-                            <div class="row">
-                                <div class="col-md-6"><img
-                                        src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTshsfwp9eZUbcdWPAGwyVOTAWLSRKFcN-6aQ&usqp=CAU"
-                                        alt="" class="img-thumbnail"></div>
-                                <div class="col-md-6">
-                                    <h6 class="text-center">HORIZON</h6>
-                                    <p class="text-center"><span class="badge bg-danger">RPG</span></p>
-                                    <ul class="list-group list-group-flush">
-                                        <li class="list-group-item">An item</li>
-                                        <li class="list-group-item">A second item</li>
-                                        <li class="list-group-item">A third item</li>
-                                        <li class="list-group-item">A fourth item</li>
-                                        <li class="list-group-item">And a fifth one</li>
-                                    </ul>
-                                </div>
-                            </div>
+                    <div class="cardme">
+                        <div class="img-cardme">
+                            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTshsfwp9eZUbcdWPAGwyVOTAWLSRKFcN-6aQ&usqp=CAU"
+                                alt="" height="190px" width="180px">
+                        </div>
+                        <div class="add-cart">Add to Cart</div>
+                        <div class="info-cardme">
+                            <p><strong>Horizon Forbidden West</strong></p>
+                            <p>Price : 94.95$</p>
                         </div>
                     </div>
                 </div>
+
                 <div class="col-lg-6 col-md-6 col-sm-12 mb-2 d-flex justify-content-center" data-aos="flip-down">
-                    <div class="card">
-                        <div class="card-header text-center">GAME</div>
-                        <div class="card-body">
-                            <div class="row">
-                                <div class="col-md-6"><img
-                                        src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT0lma9Hk_MWrO5PYLx33NMwutv6iPBa-KteQ&usqp=CAU"
-                                        alt="" class="img-thumbnail"></div>
-                                <div class="col-md-6">
-                                    <h6 class="text-center">JUMANJI</h6>
-                                    <p class="text-center"><span class="badge bg-danger">ACTION</span></p>
-                                    <ul class="list-group list-group-flush">
-                                        <li class="list-group-item">An item</li>
-                                        <li class="list-group-item">A second item</li>
-                                        <li class="list-group-item">A third item</li>
-                                        <li class="list-group-item">A fourth item</li>
-                                        <li class="list-group-item">And a fifth one</li>
-                                    </ul>
-                                </div>
-                            </div>
+                    <div class="cardme">
+                        <div class="img-cardme">
+                            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT0lma9Hk_MWrO5PYLx33NMwutv6iPBa-KteQ&usqp=CAU"
+                                alt="" height="190px" width="180px">
+                        </div>
+                        <div class="add-cart">Add to Cart</div>
+                        <div class="info-cardme">
+                            <p><strong>Jumanji</strong></p>
+                            <p>Price : 29.04$</p>
                         </div>
                     </div>
                 </div>
                 <div class="col-lg-6 col-md-6 col-sm-12 mb-2 d-flex justify-content-center" data-aos="zoom-in">
-                    <div class="card">
-                        <div class="card-header text-center">GAME</div>
-                        <div class="card-body">
-                            <div class="row">
-                                <div class="col-md-6"><img
-                                        src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTLj-TqOt8q7JPaZ2Ou4XlriTZ4tKRcBGMlhQ&usqp=CAU"
-                                        alt="" class="img-thumbnail"></div>
-                                <div class="col-md-6">
-                                    <h6 class="text-center">GOD OF WAR</h6>
-                                    <p class="text-center"><span class="badge bg-danger">ACTION</span></p>
-                                    <ul class="list-group list-group-flush">
-                                        <li class="list-group-item">An item</li>
-                                        <li class="list-group-item">A second item</li>
-                                        <li class="list-group-item">A third item</li>
-                                        <li class="list-group-item">A fourth item</li>
-                                        <li class="list-group-item">And a fifth one</li>
-                                    </ul>
-                                </div>
-                            </div>
+                    <div class="cardme">
+                        <div class="img-cardme">
+                            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTLj-TqOt8q7JPaZ2Ou4XlriTZ4tKRcBGMlhQ&usqp=CAU"
+                                alt="" height="190px" width="180px">
+                        </div>
+                        <div class="add-cart">Add to Cart</div>
+                        <div class="info-cardme">
+                            <p><strong>God Of War Ragnarok</strong></p>
+                            <p>Price : 70$</p>
                         </div>
                     </div>
                 </div>
             </div>
         </div>
     </div>
+    </div>
+    </div>
     <!-- end container char -->
     <br>
     <!-- carousel -->
-    <div class="container">
+    
         <div id="carouselExample" class="carousel slide">
             <div class="carousel-inner">
                 <div class="carousel-item active">
@@ -525,7 +539,7 @@
                 <span class="visually-hidden">Next</span>
             </button>
         </div>
-    </div>
+    
     <!-- end carousel -->
     <br>
     <!-- container accessories -->
